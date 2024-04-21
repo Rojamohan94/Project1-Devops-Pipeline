@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout source code from version control
-                git 'https://github.com/example/repo.git'
+                git 'https://github.com/Rojamohan94/Project1-Devops-Pipeline.git'
             }
         }
         
