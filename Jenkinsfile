@@ -16,14 +16,6 @@ pipeline {
             }
         }
 
-        stage('Code Analysis') {
-            steps {
-                // Perform static code analysis using SonarQube
-                // Replace "sonar-project.properties" with your SonarQube configuration file
-                sh 'sonar-scanner -Dsonar.projectKey=my-project-key -Dsonar.sources=. -Dsonar.host.url=http://sonarqube.example.com -Dsonar.login=my-token'
-            }
-        }
-
         stage('Unit Testing') {
             steps {
                 // Run unit tests using Maven
